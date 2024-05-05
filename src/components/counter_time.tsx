@@ -2,11 +2,12 @@ import React, {useState, useEffect} from 'react';
 
 interface CounterTimeProps {
 	initialTime: number;
+    prevTime: number;
 }
 
-const CounterTime : React.FC<CounterTimeProps> = ({initialTime}) => {
+const CounterTime : React.FC<CounterTimeProps> = ({InitialTime}) => {
 
-	const [time, setTime] = useState(initialTime);
+	const [time, setTime] = useState(InitialTime);
 
 	useEffect(() => {
 		const interval = setInterval(() => {

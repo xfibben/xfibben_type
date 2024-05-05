@@ -1,6 +1,5 @@
 ---
-import InputText from "../components/input_text";
-import CounterTime from "../components/counter_time";
+import InputText from "../components/input_text"
 ---
 
 <html lang="en">
@@ -11,11 +10,11 @@ import CounterTime from "../components/counter_time";
 		<meta name="generator" content={Astro.generator} />
 		<title>Xfibben-Type</title>
 	</head>
-	<body class="flex justify-center items-center bg-slate-800">
+	<body class="min-h-screen bg-slate-700 grid place-items-center font-mono
+    tracking-wider px-4">
 		<div class="grid content-center text-center">
 			<h1 class="text-white">Xfibben-Type</h1>
-			<CounterTime client:visible initialTime={4}/>
-			<InputText client:load InitialText={'hola'} />
+            <InputText client:load InitialText = {'hola'} InitialTime = {20}/>
 		</div>
 	</body>
 </html>
